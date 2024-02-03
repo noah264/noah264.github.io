@@ -26,7 +26,7 @@ $(document).ready(function () {
 
     });
 
-    $("#openVxModal").click(function () {
+    $(".openVxModal").click(function () {
         $("#vxalert").fadeIn(300);
     });
 
