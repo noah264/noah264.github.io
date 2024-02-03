@@ -26,4 +26,11 @@ $(document).ready(function () {
 
     });
 
+    $("#openVxModal").click(function () {
+        $("#vxalert").fadeIn(300);
+    });
+
+    $("#closeVxModal").click(function () {
+        $("#vxalert").fadeOut(300);
+    });
 });
