@@ -53,6 +53,13 @@
     "email":"电子邮箱",
     "email__address":"264noah@gmail.com",
     "location":"位置",
-    "location__detail":"武汉"
+    "location__detail":"武汉",
     
+    "skills_man":"人像",
+    "skills__landscape":"风景",
+    "skills__humanities":"人文",
+    "skills__wedding":"婚礼",
+    "skills__landscape":"胶片",
+    "skills__ballad":"民谣",
+    "skills__rock":"摇滚"
 }

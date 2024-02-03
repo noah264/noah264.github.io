@@ -52,5 +52,13 @@
     "email":"E-mail",
     "email__address":"264noah@gmail.com",
     "location":"Location",
-    "location__detail":"WuHan , CHN"
+    "location__detail":"WuHan , CHN",
+
+    "skills_man":"portrait",
+    "skills__landscape":"landscape",
+    "skills__humanities":"Humanities",
+    "skills__wedding":"wedding",
+    "skills__film":"film",
+    "skills__ballad":"ballad",
+    "skills__rock":"rock"
 }
