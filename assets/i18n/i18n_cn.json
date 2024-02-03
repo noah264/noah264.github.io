@@ -7,7 +7,7 @@
     "home_username":"张文俊",
     "home__title":"Hi, I'm Zhang Wenjun",
     "home__subtitle":"后端工程师",
-    "home__description":"热衷于使用先进技术打造强大的解决方案。除了编程，我还热爱生活，喜欢摄影和唱歌。通过在工作和爱好之间取得平衡，我能够为每个项目带来全面的视角。",
+    "home__description":"热衷于使用先进技术打造强大的解决方案。除了编程，我还热爱生活，喜欢摄影和音乐。在工作与爱好之间取得平衡，我能以全面的视角完成每个精彩项目。",
     "home__contact":"与我联系",
     "home__scroll-name":"往下滑",
     "about__title":"关于我",
@@ -49,10 +49,10 @@
     "contact__title":"联系方式",
     "contact__subtitle":"与我联系",
     "tel":"电话",
-    "tel__number":"166********",
+    "tel__number":"17671444762",
     "email":"电子邮箱",
-    "email__address":"asoutherncat@gmail.com",
+    "email__address":"264noah@gmail.com",
     "location":"位置",
-    "location__detail":"湖南省"
+    "location__detail":"武汉"
     
 }
