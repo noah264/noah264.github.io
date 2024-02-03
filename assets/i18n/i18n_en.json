@@ -36,17 +36,18 @@
     "education":"Education",
     "work":"Work",
     "qualification1__title":"Computer Enginner",
-    "qualification1__subtitle":"**** - University",
+    "qualification1__subtitle":"Zhongnan University of Economics and Law",
     "qualification2__title":"Web Design",
     "qualification2__subtitle":"Self-Study",
     "qualification3__title":"Web Development",
     "qualification3__subtitle":"Self-Study",
+    "qualification4__title":"fs.com",
+    "qualification4__subtitle":"phper",
+    "qualification5__title":"haitou.cc",
+    "qualification5__subtitle":"golanger",
 
     "photoAlbum__title":"Photo Album",
     "photoAlbum__subtitle":"Latest photo album",
-
-    "qualification4__title":"Software Enginner",
-    "qualification4__subtitle":"ShenZhen",
 
     "portfolio__title":"Portfolio",
     "portfolio__subtitle":"Most recent works",
