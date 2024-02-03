@@ -20,8 +20,16 @@
     "skills__title":"Skills",
     "skills__subtitle":"My technical level",
     "skills__years":"More than * years",
+
     "skills__title2":"Backend developer",
-    "skills__years2":"More than * years",
+    "skills__years2":"More than 5 years",
+
+    "skills__title3":"Photographer",
+    "skills__years3":"More than 3 years",
+
+    "skills__title4":"Music fan",
+    "skills__years4":"More than 15 years",
+
 
     "qualification__title":"Qualification",
     "qualification__subtitle":"My personal journey",

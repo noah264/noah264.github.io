@@ -22,7 +22,13 @@
     "skills__years":"*年工作经验",
 
     "skills__title2":"后端开发",
-    "skills__years2":"*年工作经验",
+    "skills__years2":"5年经验",
+
+    "skills__title3":"摄影师",
+    "skills__years3":"3年经验",
+
+    "skills__title4":"音乐爱好者",
+    "skills__years4":"15年",
 
     "qualification__title":"资历",
     "qualification__subtitle":"个人履历",
@@ -59,7 +65,7 @@
     "skills__landscape":"风景",
     "skills__humanities":"人文",
     "skills__wedding":"婚礼",
-    "skills__landscape":"胶片",
+    "skills__film":"胶片",
     "skills__ballad":"民谣",
     "skills__rock":"摇滚"
 }
