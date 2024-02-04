@@ -55,4 +55,12 @@ $(document).ready(function () {
         // 使用 window.location.href 进行跳转
         window.location.href = dialLink;
     })
+
+    $("#sendWeChat").click(function(){
+        // 构建发微信链接
+        var wechatLink = 'weixin://contacts/profile/' + 'Noah264';
+
+        // 使用 window.location.href 进行跳转
+        window.location.href = wechatLink;
+    })
 });
