@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+    init()
+
     /*默认语言*/
     var defaultLang = "en";
     $("[i18n]").i18n({
@@ -25,6 +28,15 @@ $(document).ready(function () {
         });
 
     });
+
+    //初始化数据
+    function init(){
+
+        // 调用函数以随机展示图片
+        getRandomImage();
+    }
+
+
 
     $(".openVxModal").click(function () {
         $("#vxalert").fadeIn(300);
@@ -64,23 +76,20 @@ $(document).ready(function () {
         window.location.href = wechatLink;
     })
 
-    // 手动维护文件名列表
-    var fileNames = ['image1.png', 'image2.png', 'image3.png'];
-
     function getRandomImage() {
+        // 手动维护文件名列表
+        let fileNames = ['image1.png', 'image2.png'];
+
         // 随机选择一个文件名
-        var randomImageFile = fileNames[Math.floor(Math.random() * fileNames.length)];
+        let randomImageFile = fileNames[Math.floor(Math.random() * fileNames.length)];
 
         // 构建图片的完整路径
-        var imagePath = 'assets/img/theme/' + randomImageFile;
+        let imagePath = 'assets/img/theme/' + randomImageFile;
 
-        var imageElement = document.querySelector('.home__blob image');
+        let imageElement = document.querySelector('.home__blob image');
 
         // 设置图片的 xlink:href 属性
         imageElement.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imagePath);
-
     }
 
-    // 调用函数以随机展示图片
-    getRandomImage();
 });
