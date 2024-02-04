@@ -41,4 +41,18 @@ $(document).ready(function () {
     $("#closeTelModal").click(function(){
         $("#telAlert").fadeOut(300);
     })
+
+    $("#callTel").click(function(){
+        // 获取电话号码元素
+    var phoneNumberElement = document.getElementById('callTel');
+
+        // 获取电话号码文本内容
+        var phoneNumber = phoneNumberElement.textContent;
+
+        // 构建拨号链接
+        var dialLink = 'tel:' + phoneNumber;
+
+        // 使用 window.location.href 进行跳转
+        window.location.href = dialLink;
+    })
 });
