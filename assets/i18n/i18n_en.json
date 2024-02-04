@@ -49,6 +49,17 @@
     "photoAlbum__title":"Photo Album",
     "photoAlbum__subtitle":"Latest photo album",
 
+    "photo1__title":"Classroom at dusk",
+    "photo2__title":"Shenzhen Cross-sea Bridge",
+    "photo3__title":"Under slow",
+    "photo4__title":"Hometown rice",
+    "photo5__title":"Wuchang River Beach",
+    "photo1__description":"The sunset is fleeting, like our youth.",
+    "photo2__description":"Unforgettable life in Shenzhen, opposite Hong Kong.",
+    "photo3__description":"Afterimage under Hubei Art Museum.",
+    "photo4__description":"green green green green.",
+    "photo5__description":"I watched the sunset 99 times this day.",
+
     "portfolio__title":"Portfolio",
     "portfolio__subtitle":"Most recent works",
     "portfolio1__title":"Modern Website 1",
