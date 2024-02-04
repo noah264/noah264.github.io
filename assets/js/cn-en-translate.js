@@ -33,4 +33,12 @@ $(document).ready(function () {
     $("#closeVxModal").click(function () {
         $("#vxalert").fadeOut(300);
     });
+
+    $("#openTelModal").click(function(){
+        $("#telAlert").fadeIn(300);
+    })
+
+    $("#closeTelModal").click(function(){
+        $("#telAlert").fadeOut(300);
+    })
 });

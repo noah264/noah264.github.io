@@ -939,10 +939,10 @@
               <i class="uil uil-phone-alt contact__icon"></i>
 
               <div>
-                <h3 class="contact__title" i18n="tel">Call me</h3>
-                <span class="contact__subtitle" i18n="tel__number"
+                <a href="javascript:void(0);" id="openTelModal"><h3 class="contact__title" i18n="tel">Call me</h3></a>
+                <!-- <span class="contact__subtitle" i18n="tel__number"
                   >17671444762</span
-                >
+                > -->
               </div>
             </div>
 
@@ -978,6 +978,13 @@
       <div class="modal">
           <span class="close-btn" id="closeVxModal">&times;</span>
           <img src="assets/img/vx-pic.jpg" style="max-width: 100%;height: auto;" alt="微信二维码">
+      </div>
+    </div>
+
+    <div class="overlay" id="telAlert">
+      <div class="modal">
+          <span class="close-btn" id="closeTelModal">&times;</span>
+          <span><a href="javascript:void(0)">17671444762</a></span>
       </div>
     </div>
 
