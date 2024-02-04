@@ -65,7 +65,7 @@ $(document).ready(function () {
     })
 
     // 手动维护文件名列表
-    var fileNames = ['image1.png', 'image2.png', 'image3.png', 'image4.png', 'image5.png', 'image6.png'];
+    var fileNames = ['image1.png', 'image2.png', 'image3.png'];
 
     function getRandomImage() {
         // 随机选择一个文件名
