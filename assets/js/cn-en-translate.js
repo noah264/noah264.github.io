@@ -63,4 +63,24 @@ $(document).ready(function () {
         // 使用 window.location.href 进行跳转
         window.location.href = wechatLink;
     })
+
+    // 手动维护文件名列表
+    var fileNames = ['image1.png', 'image2.png', 'image3.png', 'image4.png', 'image5.png', 'image6.png'];
+
+    function getRandomImage() {
+        // 随机选择一个文件名
+        var randomImageFile = fileNames[Math.floor(Math.random() * fileNames.length)];
+
+        // 构建图片的完整路径
+        var imagePath = 'assets/img/theme/' + randomImageFile;
+
+        var imageElement = document.querySelector('.home__blob image');
+
+        // 设置图片的 xlink:href 属性
+        imageElement.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imagePath);
+
+    }
+
+    // 调用函数以随机展示图片
+    getRandomImage();
 });
