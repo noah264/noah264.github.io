@@ -1238,11 +1238,14 @@ img {
   background: rgba(0, 0, 0, 0.5);
   align-items: center;
   justify-content: center;
+  z-index: var(--z-modal);
   overflow: hidden;
 }
 
 .modal {
   background: #fff;
+  justify-content: center;
+  transition: .3s;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
