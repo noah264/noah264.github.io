@@ -39,6 +39,9 @@
     "qualification4__subtitle":"phper",
     "qualification5__title":"haitou.cc",
     "qualification5__subtitle":"golanger",
+    "qualification6__title": "intsig.net",
+    "qualification6__subtitle": "Backend Developer",
+    "qualification6__desc": "Participated in the development of enterprise-level document recognition and processing systems, responsible for core backend module design and optimization.",
 
     "photoAlbum__title":"Photo Album",
     "photoAlbum__subtitle":"Latest photo album",

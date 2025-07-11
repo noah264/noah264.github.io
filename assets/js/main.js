@@ -52,20 +52,36 @@ const skillsContent = document.getElementsByClassName('skills__content'),
 const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]')
 
+console.log('Tabs found:', tabs.length)
+console.log('Tab contents found:', tabContents.length)
+
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
-    console.log('click disparado')
+    console.log('Tab clicked:', tab.dataset.target)
     const target = document.querySelector(tab.dataset.target)
+    
+    if (!target) {
+      console.error('Target not found:', tab.dataset.target)
+      return
+    }
 
+    // 移除所有内容的活动状态
     tabContents.forEach(tabContent => {
       tabContent.classList.remove('qualification__active')
     })
+    
+    // 添加目标内容的活动状态
     target.classList.add('qualification__active')
 
-    tabs.forEach(tab => {
-      tab.classList.remove('qualification__active')
+    // 移除所有按钮的活动状态
+    tabs.forEach(t => {
+      t.classList.remove('qualification__active')
     })
+    
+    // 添加当前按钮的活动状态
     tab.classList.add('qualification__active')
+    
+    console.log('Tab switched to:', tab.dataset.target)
   })
 })
 
