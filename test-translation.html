@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .translate-btn {
+            background: #5B6BF9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .translate-btn:hover {
+            background: #4a5ae8;
+        }
+        .test-content {
+            margin-top: 20px;
+        }
+        .test-item {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>翻译功能测试</h1>
+        <button class="translate-btn" id="translate" value="en">En/中</button>
+        <span id="nav__translate">En/中</span>
+        
+        <div class="test-content">
+            <div class="test-item">
+                <h2 i18n="home__title">Hi, I'm Wenjun Zhang</h2>
+            </div>
+            <div class="test-item">
+                <h3 i18n="home__subtitle">Backend developer</h3>
+            </div>
+            <div class="test-item">
+                <p i18n="home__description">Specialised in front- and backend development that involves building complex and scalable things for web.</p>
+            </div>
+            <div class="test-item">
+                <span i18n="contact">Contact me</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="assets/js/jquery.i18n.min.js"></script>
+    <script src="assets/js/cn-en-translate.js"></script>
+</body>
+</html> 

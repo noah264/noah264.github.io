@@ -3,11 +3,11 @@
     "about":"about",
     "skills":"skills",
     "portfolio":"portfolio",
-    "contact":"contact",
+    "contact":"Contact me",
     "home_username":"Zhang Wenjun",
     "home__title":"Hi, I'm Wenjun Zhang",
-    "home__subtitle":"Backend developer",
-    "home__description":"Specialised in front- and backend development that involves building complex and scalable things for web.",
+    "home__subtitle":"Senior Backend Developer",
+    "home__description":"Passionate backend engineer with expertise in PHP, Golang, and JavaScript. Specialized in building scalable, high-performance web applications and microservices architecture.",
     "home__contact":"Contact Me",
     "home__scroll-name":"Scroll down",
     "about__title":"About Me",
@@ -18,17 +18,9 @@
     "about__info-name3":"2 years",
     "download":"Download CV",
     "skills__title":"Skills",
-    "skills__subtitle":"My technical level",
-    "skills__years":"More than * years",
-
-    "skills__title2":"Backend developer",
-    "skills__years2":"More than 5 years",
-
-    "skills__title3":"Photographer",
-    "skills__years3":"More than 3 years",
-
-    "skills__title4":"Music fan",
-    "skills__years4":"More than 15 years",
+    "skills__subtitle":"My technical expertise",
+    "skills__title2":"Backend Development",
+    "skills__hobbies":"Hobbies & Interests",
 
 
     "qualification__title":"Qualification",
@@ -62,14 +54,14 @@
 
     "portfolio__title":"Portfolio",
     "portfolio__subtitle":"Most recent works",
-    "portfolio1__title":"Modern Website 1",
-    "portfolio1__description":"Website adaptable to all devices, with ui components and animated interactions.",
-    "portfolio2__title":"Modern Website 2",
-    "portfolio2__description":"Website adaptable to all devices, with ui components and animated interactions.",
-    "portfolio3__title":"Modern Website 3",
-    "portfolio3__description":"Website adaptable to all devices, with ui components and animated interactions.",
-    "contact__title":"Contact me",
-    "contact__subtitle":"Get in touch",
+    "portfolio1__title":"E-commerce Platform",
+    "portfolio1__description":"A full-featured e-commerce platform with payment integration, inventory management, and responsive design.",
+    "portfolio2__title":"API Management System",
+    "portfolio2__description":"High-performance REST API with authentication, rate limiting, and comprehensive documentation.",
+    "portfolio3__title":"Real-time Chat Application",
+    "portfolio3__description":"Real-time messaging application with user authentication, file sharing, and responsive design.",
+    "contact__title":"Let's Connect",
+    "contact__subtitle":"Ready to start a project? Let's discuss how I can help bring your ideas to life.",
     "tel":"Call me",
     "tel__number":"17671444762",
     "email":"E-mail",
@@ -84,5 +76,11 @@
     "skills__film":"film",
     "skills__ballad":"ballad",
     "skills__rock":"rock",
-    "skills__lightmc":"light music"
+    "skills__lightmc":"light music",
+    
+    "wechat_title":"WeChat Contact",
+    "wechat_description":"Scan the QR code to add my WeChat, or click the button below to send a message directly",
+    "phone_title":"Phone Contact",
+    "phone_description":"Click the phone number below to call directly",
+    "send__message":"Send Message"
 }

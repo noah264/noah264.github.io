@@ -6,8 +6,8 @@
     "contact":"联系方式",
     "home_username":"张文俊",
     "home__title":"Hi, I'm Zhang Wenjun",
-    "home__subtitle":"后端工程师",
-    "home__description":"专门从事前端和后端开发，涉及为网络构建复杂且可扩展的事物。",
+    "home__subtitle":"高级后端开发工程师",
+    "home__description":"充满激情的后端工程师，专精于PHP、Golang和JavaScript开发。专注于构建可扩展、高性能的Web应用程序和微服务架构。",
     "home__contact":"与我联系",
     "home__scroll-name":"往下滑",
     "about__title":"关于我",
@@ -18,17 +18,9 @@
     "about__info-name3":"2 years",
     "download":"查看简历",
     "skills__title":"技能",
-    "skills__subtitle":"技术水平",
-    "skills__years":"*年工作经验",
-
+    "skills__subtitle":"技术专长",
     "skills__title2":"后端开发",
-    "skills__years2":"5年经验",
-
-    "skills__title3":"摄影师",
-    "skills__years3":"3年经验",
-
-    "skills__title4":"音乐爱好者",
-    "skills__years4":"15年",
+    "skills__hobbies":"兴趣爱好",
 
     "qualification__title":"资历",
     "qualification__subtitle":"个人履历",
@@ -47,12 +39,12 @@
 
     "portfolio__title":"项目集",
     "portfolio__subtitle":"近期项目",
-    "portfolio1__title":"网站1",
-    "portfolio1__description":"网站采用响应式布局，适配于多种设备，具有UI组件和动画交互。",
-    "portfolio2__title":"网站2",
-    "portfolio2__description":"网站采用响应式布局，适配于多种设备，具有UI组件和动画交互。",
-    "portfolio3__title":"网站3",
-    "portfolio3__description":"网站采用响应式布局，适配于多种设备，具有UI组件和动画交互。",
+    "portfolio1__title":"电商平台",
+    "portfolio1__description":"功能完整的电商平台，包含支付集成、库存管理和响应式设计。",
+    "portfolio2__title":"API管理系统",
+    "portfolio2__description":"高性能REST API，包含身份验证、速率限制和全面的文档。",
+    "portfolio3__title":"实时聊天应用",
+    "portfolio3__description":"实时消息应用，包含用户认证、文件共享和响应式设计。",
 
     "photoAlbum__title":"摄影集",
     "photoAlbum__subtitle":"最新影集",
@@ -69,8 +61,8 @@
     "photo5__description":"有一天我看了99次日落",
 
 
-    "contact__title":"联系方式",
-    "contact__subtitle":"与我联系",
+    "contact__title":"让我们联系",
+    "contact__subtitle":"准备开始一个项目？让我们讨论我如何帮助您实现想法。",
     "tel":"电话",
     "tel__number":"17671444762",
     "email":"电子邮箱",
@@ -85,5 +77,11 @@
     "skills__film":"胶片",
     "skills__ballad":"民谣",
     "skills__rock":"摇滚",
-    "skills__lightmc":"轻音乐"
+    "skills__lightmc":"轻音乐",
+    
+    "wechat_title":"微信联系",
+    "wechat_description":"扫描二维码添加我的微信，或点击下方按钮直接发送消息",
+    "phone_title":"电话联系",
+    "phone_description":"点击下方电话号码直接拨打",
+    "send__message":"发送消息"
 }

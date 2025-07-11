@@ -4,29 +4,83 @@ $(document).ready(function () {
 
     /*默认语言*/
     var defaultLang = "en";
-    $("[i18n]").i18n({
-        defaultLang: defaultLang,
-        filePath: "assets/i18n/",//路径配置
-        filePrefix: "i18n_",
-        fileSuffix: "",
-        forever: true,
-        callback: function () {
-            console.log("i18n is ready.");
-        },
-    });
+    var currentLang = localStorage.getItem('currentLang') || defaultLang;
+    
+    // 初始化翻译
+    function initTranslation() {
+        console.log("Initializing translation with language: " + currentLang);
+        try {
+            $("[i18n]").i18n({
+                defaultLang: currentLang,
+                filePath: "assets/i18n/",
+                filePrefix: "i18n_",
+                fileSuffix: "",
+                forever: true,
+                callback: function () {
+                    console.log("i18n is ready.");
+                    updateTranslateButton();
+                },
+                error: function(err) {
+                    console.error("Translation error:", err);
+                }
+            });
+        } catch (error) {
+            console.error("Failed to initialize translation:", error);
+        }
+    }
+    
+    // 更新翻译按钮文本
+    function updateTranslateButton() {
+        var buttonText = currentLang === "cn" ? "中/En" : "En/中";
+        $("#nav__translate").text(buttonText);
+        $("#translate").val(currentLang);
+        
+        // 添加语言切换的视觉反馈
+        $("#translate").addClass('lang-changed');
+        setTimeout(() => {
+            $("#translate").removeClass('lang-changed');
+        }, 500);
+    }
+    
+    // 初始化翻译
+    initTranslation();
+    
+    // 测试翻译功能
+    setTimeout(function() {
+        console.log("Testing translation...");
+        console.log("Elements with i18n attribute: " + $("[i18n]").length);
+        console.log("Current language: " + currentLang);
+    }, 1000);
+    
     /*中英文切换按钮*/
     $("#translate").click(function (e) {
-        var a = $(e.target).val() == "cn" ? "en" : "cn";
-        var b = a=="cn"?"中/En":"En/中";
-        $(e.target).val(a);
-        $("#nav__translate").text(b);
-        console.log($(e.target).val());
-
-        $("[i18n]").i18n({
-            defaultLang: a,
-            filePath: "assets/i18n/",
-        });
-
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // 添加点击动画效果
+        $(this).addClass('translate-clicked');
+        setTimeout(() => {
+            $(this).removeClass('translate-clicked');
+        }, 300);
+        
+        // 切换语言
+        currentLang = currentLang === "cn" ? "en" : "cn";
+        localStorage.setItem('currentLang', currentLang);
+        
+        // 更新翻译
+        try {
+            $("[i18n]").i18n({
+                defaultLang: currentLang,
+                filePath: "assets/i18n/",
+            });
+        } catch (error) {
+            console.error("Translation switch error:", error);
+        }
+        
+        // 更新按钮文本
+        updateTranslateButton();
+        
+        console.log("Language switched to: " + currentLang);
     });
 
     //初始化数据
@@ -39,20 +93,54 @@ $(document).ready(function () {
 
 
     $(".openVxModal").click(function () {
-        $("#vxalert").fadeIn(300);
+        // 防止背景滚动
+        $('body').css('overflow', 'hidden');
+        $("#vxalert").fadeIn(300).addClass('show');
+        // 确保模态框居中
+        setTimeout(function() {
+            $("#vxalert .modal").css('transform', 'scale(1) translateY(0)');
+        }, 50);
     });
 
     $("#closeVxModal").click(function () {
-        $("#vxalert").fadeOut(300);
+        $("#vxalert").removeClass('show').fadeOut(300);
+        // 恢复背景滚动
+        $('body').css('overflow', 'auto');
     });
 
     $("#openTelModal").click(function(){
-        $("#telAlert").fadeIn(300);
+        // 防止背景滚动
+        $('body').css('overflow', 'hidden');
+        $("#telAlert").fadeIn(300).addClass('show');
+        // 确保模态框居中
+        setTimeout(function() {
+            $("#telAlert .modal").css('transform', 'scale(1) translateY(0)');
+        }, 50);
     })
 
     $("#closeTelModal").click(function(){
-        $("#telAlert").fadeOut(300);
+        $("#telAlert").removeClass('show').fadeOut(300);
+        // 恢复背景滚动
+        $('body').css('overflow', 'auto');
     })
+
+    // 点击遮罩层关闭模态框
+    $(".overlay").click(function(e) {
+        if (e.target === this) {
+            $(this).removeClass('show').fadeOut(300);
+            // 恢复背景滚动
+            $('body').css('overflow', 'auto');
+        }
+    });
+
+    // ESC键关闭模态框
+    $(document).keydown(function(e) {
+        if (e.keyCode === 27) { // ESC键
+            $(".overlay.show").removeClass('show').fadeOut(300);
+            // 恢复背景滚动
+            $('body').css('overflow', 'auto');
+        }
+    });
 
     $("#callTel").click(function(){
         // 获取电话号码元素
