@@ -220,11 +220,17 @@
           >My introduction</span
         >
         <div class="about__container container grid">
-          <img src="assets/img/主题2.png" style="width:80%;height: auto;" alt="" class="about__img" />
+          <img src="assets/img/主题2.png" style="width:50%;height: auto;" alt="" class="about__img" />
 
           <div class="about__data">
             <p class="about__description" i18n="about__description">
-              Experienced backend developer with a passion for creating robust, scalable solutions. I specialize in modern web technologies and microservices architecture, delivering high-quality applications that drive business value.
+              A passionate backend developer who finds joy in crafting elegant code and building robust systems. When I'm not immersed in the world of programming, you'll find me exploring the intersection of technology and art, gaming with friends, or capturing life's beautiful moments through photography. I believe that great code, like great art, should be both functional and beautiful.
+            </p>
+            <p class="about__motto" i18n="about__motto">
+              <strong>Motto:</strong> "Life is too short for bad code" | <strong>MBTI:</strong> INTJ - The Architect
+            </p>
+            <p class="about__personality" i18n="about__personality">
+              I'm the kind of person who will spend 3 hours optimizing a function that runs once a day, just because it bothers me. Also, I have a collection of rubber ducks for debugging sessions - they're surprisingly good listeners.
             </p>
 
             <div class="about__info">
@@ -262,11 +268,9 @@
       <!--==================== SKILLS ====================-->
       <section class="skills section" id="skills">
         <h2 class="section__title" i18n="skills__title">Skills</h2>
-        <span class="section__subtitle" i18n="skills__subtitle"
-          >My technical expertise</span
-        >
+        <span class="section__subtitle" i18n="skills__subtitle">My technical expertise</span>
 
-        <div class="skills__container container">
+        <div class="skills__container container grid">
           <!-- Backend Development -->
           <div class="skills__category">
             <div class="skills__category-header">
@@ -276,20 +280,18 @@
             <div class="skills__grid">
               <div class="skill__card">
                 <div class="skill__icon">
-                  <i class="uil uil-code-branch"></i>
+                  <i class="uil uil-php"></i>
                 </div>
                 <h4 class="skill__name">PHP</h4>
-                <p class="skill__level">Expert</p>
-                <p class="skill__description">Laravel, Symfony, CodeIgniter</p>
+                <p class="skill__description">Laravel framework, MVC architecture, APIs</p>
               </div>
               
               <div class="skill__card">
                 <div class="skill__icon">
-                  <i class="uil uil-cloud"></i>
+                  <i class="uil uil-code-branch"></i>
                 </div>
                 <h4 class="skill__name">Golang</h4>
-                <p class="skill__level">Advanced</p>
-                <p class="skill__description">Gin, Echo, Microservices</p>
+                <p class="skill__description">Gin framework, RESTful APIs, microservices</p>
               </div>
               
               <div class="skill__card">
@@ -297,8 +299,7 @@
                   <i class="uil uil-java-script"></i>
                 </div>
                 <h4 class="skill__name">JavaScript</h4>
-                <p class="skill__level">Intermediate</p>
-                <p class="skill__description">Node.js, Express, REST APIs</p>
+                <p class="skill__description">Node.js, Express, modern ES6+ features</p>
               </div>
               
               <div class="skill__card">
@@ -306,107 +307,56 @@
                   <i class="uil uil-database"></i>
                 </div>
                 <h4 class="skill__name">Databases</h4>
-                <p class="skill__level">Advanced</p>
-                <p class="skill__description">MySQL, PostgreSQL, Redis</p>
+                <p class="skill__description">MySQL, Redis, MongoDB, PostgreSQL</p>
               </div>
               
               <div class="skill__card">
                 <div class="skill__icon">
-                  <i class="uil uil-docker"></i>
+                  <i class="uil uil-cloud"></i>
                 </div>
-                <h4 class="skill__name">DevOps</h4>
-                <p class="skill__level">Intermediate</p>
-                <p class="skill__description">Docker, CI/CD, AWS</p>
-              </div>
-              
-              <div class="skill__card">
-                <div class="skill__icon">
-                  <i class="uil uil-git"></i>
-                </div>
-                <h4 class="skill__name">Version Control</h4>
-                <p class="skill__level">Expert</p>
-                <p class="skill__description">Git, GitLab, GitHub</p>
+                <h4 class="skill__name">Cloud Native</h4>
+                <p class="skill__description">Docker, Kubernetes, AWS, CI/CD</p>
               </div>
             </div>
           </div>
 
-          <!-- Frontend Development -->
+          <!-- Hobbies & Interests -->
           <div class="skills__category">
             <div class="skills__category-header">
-              <i class="uil uil-brackets-curly skills__category-icon"></i>
-              <h3 class="skills__category-title">Frontend Development</h3>
+              <i class="uil uil-heart-alt skills__category-icon"></i>
+              <h3 class="skills__category-title" i18n="skills__hobbies">Hobbies & Interests</h3>
             </div>
             <div class="skills__grid">
               <div class="skill__card">
                 <div class="skill__icon">
-                  <i class="uil uil-html5"></i>
+                  <i class="uil uil-camera"></i>
                 </div>
-                <h4 class="skill__name">HTML/CSS</h4>
-                <p class="skill__level">Advanced</p>
-                <p class="skill__description">Responsive Design, SASS</p>
+                <h4 class="skill__name">Photography</h4>
+                <p class="skill__description">Landscape, street, and portrait photography</p>
               </div>
               
               <div class="skill__card">
                 <div class="skill__icon">
-                  <i class="uil uil-vuejs"></i>
+                  <i class="uil uil-dumbbell"></i>
                 </div>
-                <h4 class="skill__name">Vue.js</h4>
-                <p class="skill__level">Intermediate</p>
-                <p class="skill__description">Vue 3, Composition API</p>
+                <h4 class="skill__name">Fitness</h4>
+                <p class="skill__description">Weight training, running, and outdoor sports</p>
               </div>
               
               <div class="skill__card">
                 <div class="skill__icon">
-                  <i class="uil uil-react"></i>
+                  <i class="uil uil-music"></i>
                 </div>
-                <h4 class="skill__name">React</h4>
-                <p class="skill__level">Basic</p>
-                <p class="skill__description">Hooks, Context API</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tools & Technologies -->
-          <div class="skills__category">
-            <div class="skills__category-header">
-              <i class="uil uil-tools skills__category-icon"></i>
-              <h3 class="skills__category-title">Tools & Technologies</h3>
-            </div>
-            <div class="skills__grid">
-              <div class="skill__card">
-                <div class="skill__icon">
-                  <i class="uil uil-postgresql"></i>
-                </div>
-                <h4 class="skill__name">PostgreSQL</h4>
-                <p class="skill__level">Advanced</p>
-                <p class="skill__description">Performance, Optimization</p>
+                <h4 class="skill__name">Music</h4>
+                <p class="skill__description">Rock, electronic, and classical music</p>
               </div>
               
               <div class="skill__card">
                 <div class="skill__icon">
-                  <i class="uil uil-redis"></i>
+                  <i class="uil uil-book-open"></i>
                 </div>
-                <h4 class="skill__name">Redis</h4>
-                <p class="skill__level">Intermediate</p>
-                <p class="skill__description">Caching, Session Storage</p>
-              </div>
-              
-              <div class="skill__card">
-                <div class="skill__icon">
-                  <i class="uil uil-nginx"></i>
-                </div>
-                <h4 class="skill__name">Nginx</h4>
-                <p class="skill__level">Intermediate</p>
-                <p class="skill__description">Reverse Proxy, Load Balancing</p>
-              </div>
-              
-              <div class="skill__card">
-                <div class="skill__icon">
-                  <i class="uil uil-linux"></i>
-                </div>
-                <h4 class="skill__name">Linux</h4>
-                <p class="skill__level">Advanced</p>
-                <p class="skill__description">Ubuntu, CentOS, Shell Scripting</p>
+                <h4 class="skill__name">Reading</h4>
+                <p class="skill__description">Tech books, sci-fi novels, philosophy</p>
               </div>
             </div>
           </div>
@@ -727,182 +677,6 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-
-      <!--==================== Photo Album =================== -->
-<!--      <section1 class="photo_album section" id="photo_album">-->
-<!--        <h2 class="section__title" i18n="photoAlbum__title">Photo Album</h2>-->
-<!--        <span class="section__subtitle" i18n="photoAlbum__subtitle"-->
-<!--          >Latest photo album</span-->
-<!--        >-->
-
-<!--        <div class="portfolio__container container swiper-container">-->
-<!--          <div class="swiper-wrapper">-->
-<!--            &lt;!&ndash;==================== Photo 1 ====================&ndash;&gt;-->
-
-<!--            <div class="portfolio__content grid swiper-slide">-->
-<!--              <img-->
-<!--                src="assets/img/resource/IMG_8374.jpg"-->
-<!--                alt=""-->
-<!--                class="portfolio__img"-->
-<!--              />-->
-
-<!--              <div class="portfolio_">-->
-<!--                <h3 class="portfolio__title" i18n="photo1__title">-->
-<!--                  Classroom at dusk-->
-<!--                </h3>-->
-<!--                <p-->
-<!--                  class="portfolio__description"-->
-<!--                  i18n="photo1__description"-->
-<!--                >-->
-<!--                The sunset is fleeting, like our youth.-->
-<!--                </p>-->
-<!--                &lt;!&ndash; <a-->
-<!--                  href="https://gitee.com/"-->
-<!--                  target="_blank"-->
-<!--                  class="button button&#45;&#45;flex button&#45;&#45;small portfolio__button"-->
-<!--                >-->
-<!--                  Demo-->
-<!--                  <i class="uil uil-arrow-right button__icon"></i>-->
-<!--                </a> &ndash;&gt;-->
-<!--              </div>-->
-<!--            </div>-->
-
-<!--            &lt;!&ndash;==================== PORTFOLIO 2 ====================&ndash;&gt;-->
-
-<!--            <div class="portfolio__content grid swiper-slide">-->
-<!--              <img-->
-<!--                src="assets/img/resource/IMG_4927.jpeg"-->
-<!--                alt=""-->
-<!--                class="portfolio__img"-->
-<!--              />-->
-
-<!--              <div class="portfolio_">-->
-<!--                <h3 class="portfolio__title" i18n="photo2__title">-->
-<!--                  Shenzhen Cross-sea Bridge-->
-<!--                </h3>-->
-<!--                <p-->
-<!--                  class="portfolio__description"-->
-<!--                  i18n="photo2__description"-->
-<!--                >-->
-<!--                Unforgettable life in Shenzhen, opposite Hong Kong.-->
-<!--                </p>-->
-<!--                &lt;!&ndash; <a-->
-<!--                  href="https://gitee.com/"-->
-<!--                  target="_blank"-->
-<!--                  class="button button&#45;&#45;flex button&#45;&#45;small portfolio__button"-->
-<!--                >-->
-<!--                  Demo-->
-<!--                  <i class="uil uil-arrow-right button__icon"></i>-->
-<!--                </a> &ndash;&gt;-->
-<!--              </div>-->
-<!--            </div>-->
-
-<!--            &lt;!&ndash;==================== PORTFOLIO 3 ====================&ndash;&gt;-->
-
-<!--             <div class="portfolio__content grid swiper-slide">-->
-<!--              <img-->
-<!--                src="assets/img/resource/IMG_0589.jpeg"-->
-<!--                alt=""-->
-<!--                class="portfolio__img"-->
-<!--              />-->
-
-<!--              <div class="portfolio_">-->
-<!--                <h3 class="portfolio__title" i18n="photo3__title">-->
-<!--                  Under slow-->
-<!--                </h3>-->
-<!--                <p-->
-<!--                  class="portfolio__description"-->
-<!--                  i18n="photo3__description"-->
-<!--                >-->
-<!--                Afterimage under Hubei Art Museum.-->
-<!--                </p>-->
-<!--                &lt;!&ndash; <a-->
-<!--                  href="https://gitee.com/"-->
-<!--                  target="_blank"-->
-<!--                  class="button button&#45;&#45;flex button&#45;&#45;small portfolio__button"-->
-<!--                >-->
-<!--                  Demo-->
-<!--                  <i class="uil uil-arrow-right button__icon"></i>-->
-<!--                </a> &ndash;&gt;-->
-<!--              </div>-->
-<!--            </div>-->
-
-<!--            &lt;!&ndash; ===============photo album 4============== &ndash;&gt;-->
-<!--            <div class="portfolio__content grid swiper-slide">-->
-<!--              <img-->
-<!--                src="assets/img/resource/IMG_8758.jpeg"-->
-<!--                alt=""-->
-<!--                class="portfolio__img"-->
-<!--              />-->
-
-<!--              <div class="portfolio_">-->
-<!--                <h3 class="portfolio__title" i18n="photo4__title">-->
-<!--                  Hometown rice-->
-<!--                </h3>-->
-<!--                <p-->
-<!--                  class="portfolio__description"-->
-<!--                  i18n="photo4__description"-->
-<!--                >-->
-<!--                  green green green green.-->
-<!--                </p>-->
-<!--                &lt;!&ndash; <a-->
-<!--                  href="https://gitee.com/"-->
-<!--                  target="_blank"-->
-<!--                  class="button button&#45;&#45;flex button&#45;&#45;small portfolio__button"-->
-<!--                >-->
-<!--                  Demo-->
-<!--                  <i class="uil uil-arrow-right button__icon"></i>-->
-<!--                </a> &ndash;&gt;-->
-<!--              </div>-->
-<!--            </div>-->
-
-<!--            &lt;!&ndash; ===============photo album 5============== &ndash;&gt;-->
-<!--            <div class="portfolio__content grid swiper-slide">-->
-<!--              <img-->
-<!--                src="assets/img/resource/IMG_8757.jpeg"-->
-<!--                alt=""-->
-<!--                class="portfolio__img"-->
-<!--              />-->
-
-<!--              <div class="portfolio_">-->
-<!--                <h3 class="portfolio__title" i18n="photo5__title">-->
-<!--                  Wuchang River Beach-->
-<!--                </h3>-->
-<!--                <p-->
-<!--                  class="portfolio__description"-->
-<!--                  i18n="photo5__description"-->
-<!--                >-->
-<!--                I watched the sunset 99 times this day.-->
-<!--                </p>-->
-<!--                &lt;!&ndash; <a-->
-<!--                  href="https://gitee.com/"-->
-<!--                  target="_blank"-->
-<!--                  class="button button&#45;&#45;flex button&#45;&#45;small portfolio__button"-->
-<!--                >-->
-<!--                  Demo-->
-<!--                  <i class="uil uil-arrow-right button__icon"></i>-->
-<!--                </a> &ndash;&gt;-->
-<!--              </div>-->
-<!--            </div>-->
-
-
-<!--       &lt;!&ndash; ===============photo album 5============== &ndash;&gt;-->
-
-
-<!--          </div>-->
-<!--          &lt;!&ndash; add arrows&ndash;&gt;-->
-<!--          <div class="swiper-button-next">-->
-<!--            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>-->
-<!--          </div>-->
-
-<!--          <div class="swiper-button-prev">-->
-<!--            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>-->
-<!--          </div>-->
-
-<!--          &lt;!&ndash; Add Pagination &ndash;&gt;-->
-<!--          <div class="swiper-pagination"></div>-->
-<!--        </div>-->
-<!--      </section1>-->
 
       <!--==================== CONTACT ME ====================-->
       <section class="contact section" id="contact">
